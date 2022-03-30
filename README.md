@@ -66,11 +66,9 @@ __
 
 ### String x = "coucou";
 
-### x instanceof String  (rend true) 
-
-### x instanceof Object  (rend true, car Object est la classe mère de String)
-
-### x instanceof Integer (rend false)
+### x instanceof String  (rend true)  
+### x instanceof Object  (rend true, car Object est la classe mère de String)  
+### x instanceof Integer (rend false)  
 ```
 for (AnimauxDomestique a : bob get.Animaux() {
   if (a instanceof Chat)
