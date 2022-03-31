@@ -12,7 +12,7 @@ P-2 : On souhaite ajouter à la classe Personne la méthode isProprio() qui pe
 
 ```
  fonction isProprio : boolean {
-  return this.Animaux length > 0 ;
+  return this.Animaux.size > 0 ;
  }
 ```
 P-3 : On souhaite pouvoir enregistrer, pour un animal donné, ses types de nourriture préférés parmi lesquels il a droit. Faire évoluer le diagramme UML en conséquence.
@@ -22,7 +22,6 @@ P-3 : On souhaite pouvoir enregistrer, pour un animal donné, ses types de nou
 Soit felix, le nom d’une variable qui référence à une instance de Chat, dans un programme qui exploite le modèce ci-dessus.
 Felix-1 : Donner l’instruction qui permet de connaître le nom de (lobjet référencé par) felix. 
 ```
-Chat felix;
   felix : get.Nom();
 ```
 Felix-2 : Définir une fonction nommé getNomPropro() dans AnimalDomestique, dans le but de connaître le nom de son éventuel propriétaire. Appliquez le à felix.
@@ -42,12 +41,12 @@ felix.EsperenceDeVie()
 Soit rex, le nom d’une variable qui référence une instance de Chien, dans un programme qui exploite le modèce ci-dessus.
 Rex-1 :Donner l’instruction qui permet de connaître le nombre de types de nourriture admises pour (lobjet référencé par) rex
 ```
-Rex.get.NourritureAdmise()get()
+Rex.get.NourritureAdmise()
 ```
 Rex-2 : Donner l’instruction qui affiche les types de nourriture qui lui sont permis.
 ```
-for (Type.Nourriture n : rex)
-  print (n :get.libellé)
+for (Type.Nourriture n : rex getNourritureAdmise() )
+  print (n.get.libellé)
 ```
 Rex-3 : Donner l’instruction qui permet de connaître son espérance de vie. 
 ```
@@ -56,6 +55,11 @@ Rex.EsperenceDeVie()
 Soit bob, le nom d’une variable qui référence une instance de Personne, dans un programme qui exploite toutjours le même modèce. 
 
 Bob-1 : Donner l’instruction qui affiche les animaux dont bob a la charge.  
+
+```
+for (AnimalDomestique a : bob.getAnimaux() {
+  print (a);
+```
 Bob-2 : Donner l’instruction qui affiche les chats de bob. 
 
 On pourra utiliser l’opérateur instanceof présent dans la plupart des langages.
