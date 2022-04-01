@@ -6,13 +6,13 @@
 #### Règle A :Tout  animal domestique est associé, au plus, à un propriétaire (nom + coordonnées), à un chenil et à une liste de nourritures admises.   
 P-1 : Le diagramme est-il fidèle à la règle A ? Justifier
 
-Oui car il est relié à Proprio et la multiplicité est de 0 à 1.
+Oui car il est relié à une instance de Personne (proprio) et la multiplicité est de 0 à 1.
 
 P-2 : On souhaite ajouter à la classe Personne la méthode isProprio() qui permettra de savoir si une personne est responsable (propriétaire) d’au moins un animal ou non. Donner le code de cette méthode 
 
 ```
  fonction isProprio : boolean {
-  return this.Animaux.size > 0 ;
+  return this.animaux.size > 0 ;
  }
 ```
 P-3 : On souhaite pouvoir enregistrer, pour un animal donné, ses types de nourriture préférés parmi lesquels il a droit. Faire évoluer le diagramme UML en conséquence.
@@ -22,7 +22,7 @@ P-3 : On souhaite pouvoir enregistrer, pour un animal donné, ses types de nou
 Soit felix, le nom d’une variable qui référence à une instance de Chat, dans un programme qui exploite le modèce ci-dessus.
 Felix-1 : Donner l’instruction qui permet de connaître le nom de (lobjet référencé par) felix. 
 ```
-  felix : get.Nom();
+  felix : getNom();
 ```
 Felix-2 : Définir une fonction nommé getNomPropro() dans AnimalDomestique, dans le but de connaître le nom de son éventuel propriétaire. Appliquez le à felix.
 ```
