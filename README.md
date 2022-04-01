@@ -7,6 +7,7 @@
 P-1 : Le diagramme est-il fidèle à la règle A ? Justifier
 
 Oui car il est relié à une instance de Personne (proprio) et la multiplicité est de 0 à 1.
+*Dans le diagramme de la classe AnimalDomestique est lié à la classe personne (un objet AnimalDomestique est lié à 0 ou 1 objet Personne, elle est liée à chenil (un objet peut avoir plusieurs AnimalDomestique et un AnimalDomestique n'a qu'un chenil). Elle est aussi liée à Type Nourriture (un objet AnimalDomestique peut avoir plusieurs objets Type Nourriture. Donc oui le diagramme est fidèle à la règle a.)*
 
 P-2 : On souhaite ajouter à la classe Personne la méthode isProprio() qui permettra de savoir si une personne est responsable (propriétaire) d’au moins un animal ou non. Donner le code de cette méthode 
 
