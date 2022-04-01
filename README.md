@@ -22,13 +22,13 @@ P-3 : On souhaite pouvoir enregistrer, pour un animal donné, ses types de nou
 Soit felix, le nom d’une variable qui référence à une instance de Chat, dans un programme qui exploite le modèce ci-dessus.
 Felix-1 : Donner l’instruction qui permet de connaître le nom de (lobjet référencé par) felix. 
 ```
-  felix : getNom();
+  felix.getNom();
 ```
-Felix-2 : Définir une fonction nommé getNomPropro() dans AnimalDomestique, dans le but de connaître le nom de son éventuel propriétaire. Appliquez le à felix.
+Felix-2 : Définir une fonction nommé getNomProprio() dans AnimalDomestique, dans le but de connaître le nom de son éventuel propriétaire. Appliquez le à felix.
 ```
-fonction get.Nom() String {
+fonction getNomProprio() String {
   if (this.proprio != null ){
-    return this.prorio.get.Nom();
+    return this.proprio.getNom();
     }
    return "";
   }
@@ -36,21 +36,21 @@ fonction get.Nom() String {
 Felix-3 :Donner l’instruction qui permet de connaître l’espérance de vie représentée par l’objet référencé par felix.
 
 ``` 
-felix.EsperenceDeVie()
+felix.esperenceDeVie()
 ```
 Soit rex, le nom d’une variable qui référence une instance de Chien, dans un programme qui exploite le modèce ci-dessus.
 Rex-1 :Donner l’instruction qui permet de connaître le nombre de types de nourriture admises pour (lobjet référencé par) rex
 ```
-Rex.get.NourritureAdmise()
+Rex.getNourritureAdmise()
 ```
 Rex-2 : Donner l’instruction qui affiche les types de nourriture qui lui sont permis.
 ```
 for (Type.Nourriture n : rex getNourritureAdmise() )
-  print (n.get.libellé)
+  print (n.getLibellé)
 ```
 Rex-3 : Donner l’instruction qui permet de connaître son espérance de vie. 
 ```
-Rex.EsperenceDeVie()
+Rex.esperenceDeVie()
 ```
 Soit bob, le nom d’une variable qui référence une instance de Personne, dans un programme qui exploite toutjours le même modèce. 
 
@@ -71,11 +71,13 @@ String x = "coucou";
 * x instanceof Object  (rend true, car Object est la classe mère de String)    
 * x instanceof Integer (rend false)  
 ```
-for (AnimauxDomestique a : bob get.Animaux() {
+for (AnimauxDomestique a : bob.getAnimaux() {
   if (a instanceof Chat)
     print (a);
 ```
 ### Bonus: On souhaite pouvoir montre aux Propriétaire si leur animaux on des maladies. Fait évoluer le diagramme UML..
 
  <img width="456" alt="Capture - Copie (2) - Copie" src="https://user-images.githubusercontent.com/77787321/161101185-5be87d57-51d1-4f4c-b357-ae518ec1ff1a.PNG">
+ 
+<img width="434" alt="Capture1" src="https://user-images.githubusercontent.com/77787321/161289195-da3e8461-02f5-45ee-a7fd-1a472d6eac07.PNG">
 
