@@ -76,8 +76,6 @@ for (AnimauxDomestique a : bob.getAnimaux() {
     print (a);
 ```
 ### Bonus: On souhaite pouvoir montre aux Propriétaire si leur animaux on des maladies. Fait évoluer le diagramme UML..
-
- <img width="456" alt="Capture - Copie (2) - Copie" src="https://user-images.githubusercontent.com/77787321/161101185-5be87d57-51d1-4f4c-b357-ae518ec1ff1a.PNG">
  
 <img width="434" alt="Capture1" src="https://user-images.githubusercontent.com/77787321/161289195-da3e8461-02f5-45ee-a7fd-1a472d6eac07.PNG">
 
